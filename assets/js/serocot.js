@@ -24,4 +24,9 @@ $(window).load(function() {
         $(this).css('cursor', 'pointer');
     });
 
+    $('#captcha-form').submit(function() {
+        // stuff here
+        getNewCaptcha();
+    });
+
 });
