@@ -11,4 +11,8 @@ $(window).load(function() {
 		getNewCaptcha();
 	})
 
+	$('.captcha').hover(function() {
+    	$(this).css('cursor','pointer');
+	})
+
 })
