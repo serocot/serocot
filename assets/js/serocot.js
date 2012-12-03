@@ -16,6 +16,10 @@ $(window).load(function() {
         getNewCaptcha();
     });
 
+    $('#captcha-switch').click(function(){
+        getNewCaptcha();
+    });
+
     $('.captcha').hover(function() {
         $(this).css('cursor', 'pointer');
     });

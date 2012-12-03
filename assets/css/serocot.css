@@ -23,3 +23,8 @@ body {
 .well-stats{
     padding-bottom:15px;
 }
+
+#captcha-switch{
+	text-decoration: none;
+	font-size:80%;
+}
