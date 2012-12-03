@@ -25,8 +25,21 @@ $(window).load(function() {
     });
 
     $('#captcha-form').submit(function() {
-        // stuff here
+
+        // get new captcha
         getNewCaptcha();
+
+        // don't bother if there is no response
+        if( !$('input[name=captcha_response]').val() ) {
+            return false;
+        }
+
+        // do the rest
+        var num = parseInt($.trim($('#c-sub').html()));
+        $('#c-sub').html(++num)
+        $('input[name=captcha_response]').val('');
+        return false;
+
     });
 
 });
