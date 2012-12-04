@@ -4,8 +4,8 @@ function getNewCaptcha() {
 
     var cnum = Math.floor(Math.random() * 3) + 1;
 
-    $(document).ready(function(){
-        $('.captcha').attr('src', '../assets/img/sample_' + cnum + '.jpg');
+    reqwest('get_captcha', function (resp) {
+        // hi
     });
 
 };
